@@ -172,7 +172,7 @@
   inline-size: 38px;
   block-size: 38px;
   padding: 0;
-  border: var(--border-width-button) solid transparent;
+  border: var(--brdr-width-btn) solid transparent;
   background: transparent;
   cursor: pointer;
   transition: border-color var(--transition-smooth);
@@ -282,8 +282,8 @@
     "controller controller";
   grid-template-columns: auto 1fr;
   gap: 30px;
-  border: var(--border-width) solid var(--color-text);
-  color: var(--color-text);
+  border: var(--brdr-width) solid var(--txt-color);
+  color: var(--txt-color);
   font-family: var(--font-family-accent), fantasy;
   line-height: 1.5;
   text-transform: uppercase;
@@ -299,9 +299,9 @@
 .dialog__button {
   position: relative;
   overflow: hidden;
-  border: var(--border-width) solid var(--color-primary);
+  border: var(--brdr-width) solid var(--color-primary);
   background: transparent;
-  color: var(--color-text);
+  color: var(--txt-color);
   transition: box-shadow var(--transition-smooth);
   inline-size: 100%;
   height: 38px;
