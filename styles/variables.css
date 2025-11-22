@@ -1,1 +1,50 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --header-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+    --content-width: clamp(23.1875rem, 16.035rem + 30.516vw, 43.75rem);
+    --header-padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem) clamp(0.875rem, -5.0626rem + 25.333vw, 7.531rem);
+    --inner-padding: 0 clamp(1.25rem, 0.852rem + 1.696vw, 2.5rem);
+
+    --font-family-main: "Inter";
+    --font-family-accent: "PressStart2P";
+    --title-font-size: 18px;
+    --title-font-weight: 785;
+    --text-font-weight: 400;
+    --text-font-size: 18px;
+    --normal-font-weight: 400;
+    --bold-font-weight: 700;
+
+    --brdr-width: 2px;
+    --brdr-width-btn: 2px;
+    --brdr-color: #000;
+
+    --txt-color: #000;
+    --bg-color: #FFF;
+    --btn-txt-color: #000;
+    --color-primary: #000;
+    --color-label-stroke: var(--bg-color, #FFF);
+
+    --bg-color-page: #FFF;
+    --bg-img-page:
+        repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+        repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
+        linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+    
+    --transition-smooth: 0.3s ease;
+    --transition-fast: 0.2s ease;
+    --transition-function: ease;
+    --animation-time-transform: 0.3s;
+
+    --color-like-core-active: #000;
+    --color-like-sparks-transparent: #FF0000;
+    --color-like-main-body: none;
+    --color-like-contour-liked: #FF0000;
+    --color-like-core: #000;
+    --color-like-sparks: #ff0000;
+    --color-like-main-body-active: #000;
+    --color-like-contour-active: #000;
+    --color-like-core-transparent: none;
+    --color-like-main-body-transparent: none;
+    --color-like-contour: var(--txt-color, #000000);
+            
+}
