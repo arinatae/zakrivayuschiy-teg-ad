@@ -4,25 +4,24 @@
     --content-width: clamp(23.1875rem, 16.035rem + 30.516vw, 43.75rem);
     --header-padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem) clamp(0.875rem, -5.0626rem + 25.333vw, 7.531rem);
     --inner-padding: 0 clamp(1.25rem, 0.852rem + 1.696vw, 2.5rem);
-
-    --font-family-main: "Inter";
-    --font-family-accent: "PressStart2P";
-    --title-font-size: 18px;
-    --title-font-weight: 785;
-    --text-font-weight: 400;
-    --text-font-size: 18px;
-    --normal-font-weight: 400;
-    --bold-font-weight: 700;
-
     --brdr-width: 2px;
     --brdr-width-btn: 2px;
     --brdr-color: #000;
-
+    --color-primary: #000;
     --txt-color: #000;
     --bg-color: #FFF;
-    --btn-txt-color: #000;
-    --color-primary: #000;
+    --font-family-main: "Inter";
+    --font-family-accent: "PressStart2P";
+    --title-font-size: 18px;
+    --normal-font-weight: 400;
+    --bold-font-weight: 700;
+    --header-padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem) clamp(0.875rem, -5.0626rem + 25.333vw, 7.531rem);
+    --inner-padding: 0 clamp(1.25rem, 0.852rem + 1.696vw, 2.5rem);
+    --text-font-size: 18px;
     --color-tag-stroke: var(--bg-color, #FFF);
+    --btn-txt-color: #000;
+    --title-font-weight: 785;
+    --text-font-weight: 400;
 
     --bg-img-page:
           repeating-linear-gradient(
@@ -42,9 +41,8 @@
                   #1a1a1a 100%
           );
     --bg-color-page: #fff;
-
     --transition-smooth: 0.3s ease;
     --transition-fast: 0.2s ease;
     --transition-function: ease;
-    --animation-time-transform: 0.3s;          
+    --animation-time-transform: 0.3s;
 }

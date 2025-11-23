@@ -10,6 +10,8 @@
 
 */
 
+/*основная страница*/
+
 .page {
   background-image: var(--bg-img-page);
   background-color: var(--bg-color-page);
@@ -81,15 +83,15 @@
   border: var(--brdr-width) solid var(--brdr-color);
   width: 100%;
 }
-
+/*надписи поверх пикч*/
 .card__picture-tag {
   top: 25px;
   right: 25px;
   mix-blend-mode: hard-light;
-  text-shadow: 1px 0 0 var(--bg-color),
-  -1px 0 0 var(--bg-color),
-  0 1px 0 var(--bg-color),
-  0 -1px 0 var(--bg-color);
+  text-shadow: 1px 0px 0px var(--bg-color),
+  -1px 0px 0px var(--bg-color),
+  0px 1px 0px var(--bg-color),
+  0px -1px 0px var(--bg-color);
   line-height: normal;
   font-size: 14px;
   font-family: var(--font-family-accent), fantasy;
@@ -132,10 +134,12 @@
 .button__block {
   gap: 12px;
   display: flex;
-  padding: 0 25px 25px clamp(11.0625rem, 10.169rem + 3.811vw, 31.375rem);
+  padding: 0px 25px 25px clamp(11.0625rem, 10.169rem + 3.811vw, 31.375rem);
   justify-content: flex-end;
   flex-direction: row;
 }
+
+/*наложение фильтров на пикчи*/
 
 .section:nth-child(2) .section__picture {
 	filter: grayscale(0.8);
@@ -165,8 +169,10 @@
 	filter: hue-rotate(90deg) opacity(0.7) blur(0.2rem);
 }
 
+/*кнопочки*/
+
 .card__icon-button {
-  padding: 0;
+  padding: 0px;
   border: var(--brdr-width-btn) solid transparent;
   display: flex;
   justify-content: center;
@@ -201,8 +207,10 @@
 }
 
 .like-icon {
-  padding: 0;
+  padding: 0px;
 }
+
+/*секция "сохранить на память"*/
 
 .memory__section {
   margin-bottom: 100px;
@@ -241,7 +249,7 @@
 .memory__button:focus,
 .dialog__button:focus {
   transition: box-shadow var(--transition-smooth);
-  box-shadow: 2px 2px 0 var(--color-primary);
+  box-shadow: 2px 2px 0px var(--color-primary);
   outline: none;
 }
 
