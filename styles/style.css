@@ -276,7 +276,7 @@
 }
 
 .dialog {
-    color: var(--txt-color);
+  color: var(--txt-color);
   gap: 30px;
   opacity: 0;
   grid-template-columns: auto 1fr;
