@@ -24,12 +24,25 @@
     --color-primary: #000;
     --color-label-stroke: var(--bg-color, #FFF);
 
-    --bg-color-page: #FFF;
     --bg-img-page:
-        repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
-        repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
-        linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
-    
+          repeating-linear-gradient(
+                  90deg,
+                  #d3d3d3 0 2px,
+                  transparent 2px 4px
+          ),
+          repeating-linear-gradient(
+                  180deg,
+                  #d3d3d3 0 2px,
+                  transparent 2px 4px
+          ),
+          linear-gradient(
+                  180deg,
+                  #e7e7e7 0%,
+                  #e7e7e7 0.01%,
+                  #1a1a1a 100%
+          );
+    --bg-color-page: #fff;
+
     --transition-smooth: 0.3s ease;
     --transition-fast: 0.2s ease;
     --transition-function: ease;
