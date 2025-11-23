@@ -25,20 +25,7 @@
   flex-direction: column;
 }
 
-.header-content {
-  display: flex;
-  align-items: center;
-  background-color: var(--bg-color);
-  flex-direction: column;
-  padding: var(--header-padding);
-  margin: 100px 0px;
-  gap: 20px;
-  min-height: clamp(20.4375rem, 19.285rem + 4.913vw, 23rem);
-  max-width: var(--content-width);
-  border: var(--brdr-width) solid var(--brdr-color);
-}
-
-.header__descriprion {
+.header__description {
   line-height: 1;
   text-align: center;
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
@@ -50,6 +37,19 @@
   text-align: center;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   font-family: var(--font-family-accent), fantasy;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
+  flex-direction: column;
+  padding: var(--header-padding);
+  margin: 100px 0px;
+  gap: 20px;
+  min-height: clamp(20.4375rem, 19.285rem + 4.913vw, 23rem);
+  max-width: var(--content-width);
+  border: var(--brdr-width) solid var(--brdr-color);
 }
 
 .main-content {
@@ -77,12 +77,12 @@
   max-width: var(--content-width);
 }
 
-.section__image {
+.section__picture {
   border: var(--brdr-width) solid var(--brdr-color);
   width: 100%;
 }
 
-.card__img-label {
+.card__picture-tag {
   top: 25px;
   right: 25px;
   mix-blend-mode: hard-light;
@@ -99,19 +99,19 @@
   position: absolute;
 }
 
-.card__img-wrapper {
+.card__picture-frame {
   overflow: hidden;
   position: relative;
 }
 
 @supports (
-  (-webkit-text-stroke: 1px var(--color-label-stroke)) or
-  (text-stroke: 1px var(--color-label-stroke))
+  (-webkit-text-stroke: 1px var(--color-tag-stroke)) or
+  (text-stroke: 1px var(--color-tag-stroke))
 ) {
-  .card__img-label {
+  .card__picture-tag {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--color-label-stroke);
-    text-stroke: 1px var(--color-label-stroke);
+    -webkit-text-stroke: 1px var(--color-tag-stroke);
+    text-stroke: 1px var(--color-tag-stroke);
   }
 }
 
@@ -137,32 +137,32 @@
   flex-direction: row;
 }
 
-.section:nth-child(2) .section__image {
-	filter: grayscale(0.5);
+.section:nth-child(2) .section__picture {
+	filter: grayscale(0.8);
 }
 
-.section:nth-child(3) .section__image {
-	filter: saturate(4.5);
+.section:nth-child(3) .section__picture {
+	filter: saturate(160%);
 }
 
-.section:nth-child(4) .section__image {
-	filter: hue-rotate(50deg);
+.section:nth-child(4) .section__picture {
+	filter: hue-rotate(-310deg);
 }
 
-.section:nth-child(5) .section__image {
-	filter: invert(1) brightness(0.9);
+.section:nth-child(5) .section__picture {
+	filter: invert(100%) brightness(0.7);
 }
 
-.section:nth-child(6) .section__image {
-	filter: sepia(1);
+.section:nth-child(6) .section__picture {
+	filter: sepia(100%);
 }
 
-.section:nth-child(7) .section__image {
-	filter: blur(5px);
+.section:nth-child(7) .section__picture {
+	filter: blur(1rem);
 }
 
-.section:nth-child(8) .section__image {
-	filter: hue-rotate(90deg) opacity(0.7) blur(2px);
+.section:nth-child(8) .section__picture {
+	filter: hue-rotate(90deg) opacity(0.7) blur(0.2rem);
 }
 
 .card__icon-button {
@@ -204,7 +204,7 @@
   padding: 0;
 }
 
-.save__section {
+.memory__section {
   margin-bottom: 100px;
 }
 
@@ -219,7 +219,7 @@
   block-size: 22px;
 }
 
-.save__button {
+.memory__button {
   background-color: var(--bg-color);
   cursor: pointer;
   padding: 15px 21px 15px 19px;
@@ -238,7 +238,7 @@
 }
 
 .card__like-button:focus,
-.save__button:focus,
+.memory__button:focus,
 .dialog__button:focus {
   transition: box-shadow var(--transition-smooth);
   box-shadow: 2px 2px 0 var(--color-primary);
@@ -251,13 +251,13 @@
 }
 
 .card__like-button:hover::before,
-.save__button:hover::before,
+.memory__button:hover::before,
 .dialog__button:hover::before {
   transform: translateX(0);
 }
 
 .card__like-button::before,
-.save__button::before,
+.memory__button::before,
 .dialog__button::before {
   z-index: 0;
   transform: translateX(-100%);
@@ -269,7 +269,7 @@
 }
 
 .card__like-button:hover .button__text,
-.save__button:hover .button__text,
+.memory__button:hover .button__text,
 .dialog__button:hover .button__text {
   transition: color var(--transition-fast);
   color: var(--bg-color-page);
@@ -344,7 +344,7 @@
 }
 
 @media (width < 380px) {
-  .save__button {
+  .memory__button {
     align-items: center;
     flex-direction: column;
   }

@@ -22,7 +22,7 @@
     --bg-color: #FFF;
     --btn-txt-color: #000;
     --color-primary: #000;
-    --color-label-stroke: var(--bg-color, #FFF);
+    --color-tag-stroke: var(--bg-color, #FFF);
 
     --bg-img-page:
           repeating-linear-gradient(
@@ -46,18 +46,5 @@
     --transition-smooth: 0.3s ease;
     --transition-fast: 0.2s ease;
     --transition-function: ease;
-    --animation-time-transform: 0.3s;
-
-    --color-like-core-active: #000;
-    --color-like-sparks-transparent: #FF0000;
-    --color-like-main-body: none;
-    --color-like-contour-liked: #FF0000;
-    --color-like-core: #000;
-    --color-like-sparks: #ff0000;
-    --color-like-main-body-active: #000;
-    --color-like-contour-active: #000;
-    --color-like-core-transparent: none;
-    --color-like-main-body-transparent: none;
-    --color-like-contour: var(--txt-color, #000000);
-            
+    --animation-time-transform: 0.3s;          
 }
