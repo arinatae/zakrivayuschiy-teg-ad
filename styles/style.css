@@ -117,7 +117,7 @@
 
 .content__text {
   line-height: 21px;
-  font-size: var(--text-font-size-);
+  font-size: var(--text-font-size);
   font-weight: var(--text-font-weight);
   font-family: var(--font-family-main), sans-serif;
 }
@@ -310,7 +310,7 @@
   text-transform: uppercase;
   cursor: pointer;
   padding: 10px 17px;
-  transition: background-color var(--transition-fast);
+  transition: var(--transition-fast);
 }
 
 .dialog[open] {
