@@ -303,7 +303,7 @@
   background: transparent;
   border: var(--brdr-width) solid var(--color-primary);
   overflow: hidden;
-  padding: 10px 17px; 
+  padding: 10px 17px;
   position: relative;
   cursor: pointer;
   text-transform: uppercase;
